@@ -4,7 +4,7 @@ from datetime import date
 import os
 import logging
 
-filename = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'DateTest.log')
+filename = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'cron.log')
 logging.basicConfig(filename=filename, format='%(asctime)s %(message)s', level=logging.DEBUG)
 current_year = date.today().strftime("%Y")
 today = date.today().strftime("%d.%m.%Y")
