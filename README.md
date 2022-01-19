@@ -1,5 +1,5 @@
 # AutomatischeBrauanzeigeBeimZoll
-This is for German home brewers. A python script that sends an email every January 1st to your customs office (as is the law here) to announce your beer brewing intentions for the coming year.
+This is for German home brewers. A Python script that sends an email every January 1st to your customs office (as is the law here) to announce your beer brewing intentions for the coming year.
 Since I tend to forget about this, I wanted to automate it :-).
 
 1. This script uses the SendGrid API (https://sendgrid.com/). They offer a free account for up to 100 emails per day, so more than enough for our 1 email per year...
@@ -24,7 +24,7 @@ To automate the sending of our customs email, we will create a cronjob on a Debi
     ```
 2. Add the following line. This will inscruct cron to execute your script at 12 pm every January 1st.
     ```
-    0 12 1 1 * /usr/bin/python3 /path/to/ZollEmail_git.py > /same/path/cron.log 2>&1
+    0 12 1 1 * /usr/bin/python3 /path/to/ZollEmail_git.py > /same/path/ZollEmail_cron.log 2>&1
     ```
     
 3. Save & exit
